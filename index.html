@@ -359,12 +359,14 @@
                 <h3 class="text-primary mb-4">Newsletter</h3>
                 <p>Stay connected with LayarCargo . Get your best services </p>
                 <div class="w-100">
+                    <form action="" method="post">
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
+                            <button class="btn btn-primary px-4" onclick="fun()">Sign Up</button>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -389,7 +391,15 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+function fun(){
+    <div class="alert alert-success" role="alert">
+  Thank you for the sign Up 
+</div>
+
+}
+
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
