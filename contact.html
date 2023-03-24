@@ -26,7 +26,10 @@
 </head>
 <script>
     function test() {
-        alert("submit")
+        // event.preventDefault()
+      document.getElementById("testId").innerHTML = "Form submitted successfully LayarCargo Will contact you soon!!"
+    //   alert("test")
+      
     }
 </script>
 
@@ -88,31 +91,33 @@
                     <h1 class="mb-4">Contact For Any Queries</h1>
                     <div class="contact-form bg-secondary" style="padding: 30px;">
                         <div id="success"></div>
-                        <form action="test" >
+                        <form  >
                             <div class="control-group">
                                 <input type="text" class="form-control border-0 p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                     data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="email" class="form-control border-0 p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                     data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control border-0 p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                     data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control border-0 py-3 px-4" rows="3" id="message" placeholder="Message"
-                                    required="required"
+                                    
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-primary py-3 px-4" onclick="fun2()" type="submit" >Send
+                                
+                                <button class="btn btn-primary py-3 px-4"  type="button" onclick="test()" >Send
                                     Message</button>
+                                    <div id="testId"></div>
                             </div>
                         </form>
                     </div>
